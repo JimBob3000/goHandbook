@@ -31,3 +31,56 @@ html, body {
     border-left: 2px solid rgb(14, 165, 233);
     color:rgb(14, 165, 233);
 }
+
+.code {
+    background-color: #1e1e1e;
+    color: #eaeaea;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-family: Consolas,monaco,monospace; 
+}
+
+.indent {
+    margin-left: 30px;
+}
+
+.keyword {
+    color: #569cd6;
+}
+
+.package {
+    color: #ce9178;
+}
+
+.comment {
+    color: #6a9955;
+}
+
+.function {
+    color: #dcdcaa;
+}
+
+.variable {
+    color: #9cdcfe;
+}
+
+.bracket {
+    color: #e6b422;
+}
+
+.curlyBracket {
+    color: #dcdcaa;
+}
+
+.squareBracket {
+    color: #33ccff;
+}
+
+.conditional {
+    color: #c586c0;
+}
+
+.type {
+    color: #4ec9ab;
+}
+

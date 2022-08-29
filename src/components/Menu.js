@@ -8,7 +8,6 @@ const Menu = ({open, onClick}) => {
                     <Chapters />
                 </div>
             </div>
-            
         </div>
     );
 }
