@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (  
         <nav id="nav" className="sticky top-0 h-[80px] z-50 flex border-b-2 flex-wrap items-center bg-white shadow-md shadow-slate-900/5 transition duration-500 px-6">
-            <button className="lg:hidden" onClick={() => setOpen(!open)}>
+            <button className="lg:hidden mobileMenuToggle" onClick={() => setOpen(!open)}>
                 <FontAwesomeIcon className={`w-[14px] ${open ? "text-xl" : ""}`}  icon={open ? faXmark : faBars}/>
             </button>
 
