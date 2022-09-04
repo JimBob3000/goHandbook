@@ -19,11 +19,11 @@ const Chapters = () => {
                 </ul>
             </li>
             <li>
-                <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Chapter</h5>
+                <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Searching</h5>
                 <ul className="mt-4  border-l-2 border-slate-100">
-                    <li className="leading-9"><a className="inactive" href="/">Section</a></li>
-                    <li className="leading-9"><a className="inactive" href="/">Section</a></li>
-                    <li className="leading-9"><a className="inactive" href="/">Section</a></li>
+                    <li className="leading-9"><a className="inactive" href="/searching#linearSearch">Linear Search</a></li>
+                    <li className="leading-9"><a className="inactive" href="/searching#jumpSearch">Jump Search</a></li>
+                    <li className="leading-9"><a className="inactive" href="/searching#binarySearch">Binary Search</a></li>
                 </ul>
             </li>
             <li>
