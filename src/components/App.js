@@ -10,6 +10,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/loops" element={<Page page="Loops"/>} />
+        <Route exact path="/structs" element={<Page page="Structs"/>} />
         <Route exact path="/sorting" element={<Page page="Sorting"/>} />
         <Route exact path="/searching" element={<Page page="Searching"/>} />
         <Route exact path="/" element={<Page page="Home"/>} />

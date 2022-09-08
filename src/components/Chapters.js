@@ -11,6 +11,13 @@ const Chapters = () => {
                 </ul>
             </li>
             <li>
+                <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Structs</h5>
+                <ul className="mt-4  border-l-2 border-slate-100">
+                    <li className="leading-9"><a className="inactive" href="/structs#struct">Struct</a></li>
+                    <li className="leading-9"><a className="inactive" href="/structs#embeddedStruct">Embedded Struct</a></li>
+                </ul>
+            </li>
+            <li>
                 <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Sorting</h5>
                 <ul className="mt-4  border-l-2 border-slate-100">
                     <li className="leading-9"><a className="inactive" href="/sorting#bubbleSort">Bubble Sort</a></li>
