@@ -1,13 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 
-const NotFound = () => {
+const About = () => {
     const navigate = useNavigate();
     const handleClickBackToHome = () => {
         navigate('/');
     }
 
     return ( 
-        <section id="404" className="flex-grow">
+        <section id="about" className="flex-grow">
             <div className="text-center mx-auto pt-32">
                 <h1 className="text-3xl text-gray-900 pb-12">About</h1>
                 <p className="pb-4">Hi! My name is James and I built this website.</p>
@@ -28,4 +28,4 @@ const NotFound = () => {
      );
 }
  
-export default NotFound;
+export default About;

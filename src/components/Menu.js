@@ -1,4 +1,4 @@
-import Chapters from './Chapters';
+import Chapters from '../constants/Chapters';
 
 const Menu = ({open, onClick}) => {
     return ( 

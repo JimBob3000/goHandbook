@@ -1,7 +1,7 @@
-import SideMenu from "./SideMenu";
-import Content from "./Content";
+import SideMenu from "../../components/SideMenu";
+import Content from "./components/Content";
 
-const Page = (page) => {
+const Topics = (page) => {
     return ( 
         <div className="xl:px-auto relative mx-auto flex justify-center lg:justify-start xl:justify-center sm:px-2 lg:px-8">
             <SideMenu />
@@ -10,4 +10,4 @@ const Page = (page) => {
     );
 }
  
-export default Page;
+export default Topics;

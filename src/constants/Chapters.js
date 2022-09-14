@@ -33,6 +33,14 @@ const Chapters = () => {
                     <li className="leading-9"><a className="inactive" href="/searching#binarySearch">Binary Search</a></li>
                 </ul>
             </li>
+            <hr />
+            <li>
+                <ul className="mt-4  border-l-2 border-slate-100">
+                    <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Other Pages</h5>
+                    <li className="leading-9"><a className="inactive" href="/home">Home</a></li>
+                    <li className="leading-9"><a className="inactive" href="/about">About</a></li>
+                </ul>
+            </li>
         </ul>
     );
 }
