@@ -1,5 +1,5 @@
 import React from 'react';
-import NotFound from '../notFound/NotFound';
+import NotFound from './components/NotFound';
 import SideMenu from "../../components/SideMenu";
 import Loops from "./components/Loops";
 import Structs from "./components/Structs";
@@ -25,7 +25,7 @@ const Topics = ({topic, subTopic}) => {
             default:
                 return ( <NotFound /> );
         }
-    }, [currentTopic] );
+    }, [currentTopic]);
 
     return (
         <div className="xl:px-auto relative mx-auto flex justify-center lg:justify-start xl:justify-center sm:px-2 lg:px-8">
