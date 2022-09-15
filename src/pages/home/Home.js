@@ -2,7 +2,7 @@ import SideMenu from "../../components/SideMenu";
 const Home = () => {
     return ( 
         <div className="xl:px-auto relative mx-auto flex justify-center lg:justify-start xl:justify-center sm:px-2 lg:px-8">
-            <SideMenu />
+            <SideMenu currentTopic="home" />
             <div className="px-6 md:px-6 lg:px-0 py-16 text-slate-800 md:w-[700px] lg:w-full lg:ml-[30px] 2xl:ml-[60px] lg:mr-[0px] xl:w-auto xl:max-w-[900px]   mx-auto">
                 <div>
                     <p className="mb-2 text-sm leading-6 font-semibold text-sky-500">Home</p>

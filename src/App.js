@@ -6,6 +6,9 @@ import Home from './pages/home/Home';
 import About from './pages/about/About';
 
 function App() {
+  const topic = window.location.pathname.substring(1).toLowerCase()
+  const subTopic = new URLSearchParams(window.location.search).get("section")
+  
   return (
     <Router>
       <Navbar />
@@ -14,7 +17,14 @@ function App() {
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/" element={<Home />} />
         <Route exact path="/404" element={<NotFound />} />
-        <Route path="*" element={<Topics page={window.location.pathname.substring(1).toLowerCase()}/>} />
+        <Route path="*" 
+          element={
+            <Topics 
+              topic={topic}
+              subTopic={subTopic}
+            />
+          } 
+        />
       </Routes>
     </Router>
   );
