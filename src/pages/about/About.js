@@ -7,6 +7,7 @@ const About = () => {
     }
 
     return ( 
+        // TODO: fix styling
         <section id="about" className="flex-grow">
             <div className="text-center mx-auto pt-32">
                 <h1 className="text-3xl text-gray-900 pb-12">About</h1>

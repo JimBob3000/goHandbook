@@ -1,6 +1,7 @@
 import React from 'react';
 import NotFound from './components/NotFound';
 import SideMenu from "../../components/SideMenu";
+import Home from "./components/Home";
 import Loops from "./components/Loops";
 import Structs from "./components/Structs";
 import Searching from "./components/Searching";
@@ -14,6 +15,8 @@ const Topics = ({topic, subTopic}) => {
 
     const ActiveTopic = useCallback((props) => {
         switch (currentTopic) {
+            case "home":
+                return ( <Home /> );
             case "loops":
                 return ( <Loops /> );
             case "structs":
@@ -22,11 +25,14 @@ const Topics = ({topic, subTopic}) => {
                 return ( <Searching /> );
             case "sorting":
                 return ( <Sorting /> );
+            // TODO: Add "" to show home
             default:
                 return ( <NotFound /> );
         }
     }, [currentTopic]);
 
+    // TODO: scroll to subTopic
+    // TODO: fix code sections being a div within a p
     return (
         <div className="xl:px-auto relative mx-auto flex justify-center lg:justify-start xl:justify-center sm:px-2 lg:px-8">
             <SideMenu 
