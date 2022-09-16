@@ -15,6 +15,8 @@ const Topics = ({topic, subTopic}) => {
 
     const ActiveTopic = useCallback((props) => {
         switch (currentTopic) {
+            case "":
+                return ( <Home /> );
             case "home":
                 return ( <Home /> );
             case "loops":
@@ -25,7 +27,6 @@ const Topics = ({topic, subTopic}) => {
                 return ( <Searching /> );
             case "sorting":
                 return ( <Sorting /> );
-            // TODO: Add "" to show home
             default:
                 return ( <NotFound /> );
         }
