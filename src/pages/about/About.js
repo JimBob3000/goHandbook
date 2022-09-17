@@ -9,7 +9,7 @@ const About = () => {
     return ( 
         // TODO: fix styling
         <section id="about" className="flex-grow">
-            <div className="text-center mx-auto pt-32">
+            <div className="text-center mx-auto pt-10">
                 <h1 className="text-3xl text-gray-900 pb-12">About</h1>
                 <p className="pb-4">Hi! My name is James and I built this website.</p>
                 <p className="pb-4">I intend for it to serve as a quick lookup for the Go language.</p>
