@@ -20,7 +20,7 @@ const Navbar = () => {
             </button>
 
             <div className="flex sm:mx-auto flex-col text-center py-5 md:py-2 px-6">
-                <Link to="/" className="font-extrabold tracking-widest text-2xl text-slate-800 ">GOLANG HANDBOOK</Link>
+                <a href="/home" className="font-extrabold tracking-widest text-2xl text-slate-800 ">GOLANG HANDBOOK</a>
                 <a href="https://github.com/JimBob3000" className="lg:block hidden pb-1 text-sm text-slate-500 transition duration-500 hover:text-slate-700">By James Elliott</a>
             </div>
             <div className="lg:hidden">
