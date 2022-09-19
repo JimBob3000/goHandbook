@@ -42,7 +42,7 @@ const Topics = ({topic, subTopic}) => {
                 currentSubTopic={currentSubTopic} 
                 setCurrentSubTopic={setCurrentSubTopic}
             />
-            <div className="px-6 md:px-6 lg:px-0 py-16 text-slate-800 md:w-[700px] lg:w-full lg:ml-[30px] 2xl:ml-[60px] lg:mr-[0px] xl:w-auto xl:max-w-[900px]   mx-auto">
+            <div className="px-6 md:px-6 lg:px-0 py-16 text-slate-800 md:w-[700px] lg:w-full lg:ml-[30px] 2xl:ml-[60px] lg:mr-[0px] xl:max-w-[900px] mx-auto">
                 <ActiveTopic />
             </div>
         </div>
