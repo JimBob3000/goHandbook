@@ -4,8 +4,8 @@ const Chapters = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSu
     const navigate = useNavigate();
 
     const handleNavigation = (topic, subTopic) => {
-        setCurrentTopic(topic)
         setCurrentSubTopic(subTopic)
+        setCurrentTopic(topic)
 
         if (subTopic === "") {
             navigate("/" + topic);

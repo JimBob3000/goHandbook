@@ -9,30 +9,32 @@ import Sorting from "./components/Sorting";
 import { useState } from 'react';
 import { useCallback } from 'react';
 
-const Topics = ({topic, subTopic}) => {
+const Topics = () => {
+    const topic = window.location.pathname.substring(1).toLowerCase()
+    const subTopic = new URLSearchParams(window.location.search).get("section")
+    
     const [currentTopic, setCurrentTopic] = useState(topic)
     const [currentSubTopic, setCurrentSubTopic] = useState(subTopic)
 
-    const ActiveTopic = useCallback((props) => {
+    const ActiveTopic = useCallback(() => {
         switch (currentTopic) {
             case "":
                 return ( <Home /> );
             case "home":
                 return ( <Home /> );
             case "loops":
-                return ( <Loops /> );
+                return ( <Loops subTopic={currentSubTopic} /> );
             case "structs":
-                return ( <Structs /> );
+                return ( <Structs subTopic={currentSubTopic} /> );
             case "searching":
-                return ( <Searching /> );
+                return ( <Searching subTopic={currentSubTopic} /> );
             case "sorting":
-                return ( <Sorting /> );
+                return ( <Sorting subTopic={currentSubTopic} /> );
             default:
                 return ( <NotFound /> );
         }
-    }, [currentTopic]);
+    }, [currentTopic, currentSubTopic]);
 
-    // TODO: scroll to subTopic
     // TODO: fix code sections being a div within a p
     return (
         <div className="xl:px-auto relative mx-auto flex justify-center lg:justify-start xl:justify-center sm:px-2 lg:px-8">

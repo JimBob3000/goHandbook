@@ -1,10 +1,30 @@
-const Loops = () => {
+import React, { useRef, useEffect } from "react";
+
+const Loops = ({ subTopic }) => {
+    const forRef = useRef();
+    const forEachRef = useRef();
+    const whileRef = useRef();
+    const infiniteRef = useRef();
+
+    const refLookup = {
+        "for": forRef,
+        "forEach": forEachRef,
+        "while": whileRef,
+        "infinite": infiniteRef,
+    };
+
+    useEffect(() => {
+        const targetRef = refLookup[subTopic];
+        targetRef.current.scrollIntoView({behavior: 'smooth'})
+    }, [subTopic]);
+
     return (
         <div>
             <p className="mb-2 text-sm leading-6 font-semibold text-sky-500">Loops</p>
             <h1 className="text-3xl sm:text-3xl font-medium text-slate-800 pb-8">Loops In Go</h1>
             <p className="text-[#334155]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc aliquet bibendum.</p>
-            
+            <div ref={forRef}></div>
+
             <hr className="my-14"></hr>
 
             <h2 className="text-2xl font-medium pb-8 text-slate-800">For Loop</h2>
@@ -16,6 +36,7 @@ const Loops = () => {
                     </div>
                     <span className="curlyBracket">&#125;</span>
                 </p>
+                <div ref={forEachRef}></div>
             </div>
 
             <hr className="my-14"></hr>
@@ -56,7 +77,9 @@ const Loops = () => {
                     </div>
                     <span className="curlyBracket">&#125;</span>
                 </p>
+                <div ref={whileRef}></div>
             </div>
+            <div />
 
             <hr className="my-14"></hr>
 
@@ -72,6 +95,7 @@ const Loops = () => {
                     </div>
                     <span className="curlyBracket">&#125;</span>
                 </p>
+                <div ref={infiniteRef}></div>
             </div>
 
             <hr className="my-14"></hr>
