@@ -1,10 +1,26 @@
-const Structs = () => {
+import React, { useRef, useEffect } from "react";
+
+const Structs = ({ subTopic }) => {
+    const structRef = useRef();
+    const embeddedStructRef = useRef();
+
+    const refLookup = {
+        "struct": structRef,
+        "embeddedStruct": embeddedStructRef,
+    };
+
+    useEffect(() => {
+        const targetRef = refLookup[subTopic];
+        targetRef.current.scrollIntoView({behavior: 'smooth'})
+    }, [subTopic]);
+
     return (
         <div>
             <p className="mb-2 text-sm leading-6 font-semibold text-sky-500">Structs</p>
             <h1 className="text-3xl sm:text-3xl font-medium text-slate-800 pb-8">Structs In Go</h1>
             <p className="text-[#334155]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc aliquet bibendum.</p>
-            
+            <div ref={structRef}></div>
+
             <hr className="my-14"></hr>
 
             <h2 className="text-2xl font-medium pb-8 text-slate-800">Struct</h2>
@@ -31,7 +47,8 @@ const Structs = () => {
                 </div>
                 <span className="curlyBracket">&#125;</span><br />
             </div>
-            
+            <div ref={embeddedStructRef}></div>
+
             <hr className="my-14"></hr>
 
             <h2 className="text-2xl font-medium pb-8 text-slate-800">Embedded Struct</h2>

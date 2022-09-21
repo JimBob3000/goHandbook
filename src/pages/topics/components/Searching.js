@@ -1,10 +1,28 @@
-const Searching = () => {
+import React, { useRef, useEffect } from "react";
+
+const Searching = ({ subTopic }) => {
+    const linearRef = useRef();
+    const jumpRef = useRef();
+    const binaryRef = useRef();
+
+    const refLookup = {
+        "linear": linearRef,
+        "jump": jumpRef,
+        "binary": binaryRef,
+    };
+
+    useEffect(() => {
+        const targetRef = refLookup[subTopic];
+        targetRef.current.scrollIntoView({behavior: 'smooth'})
+    }, [subTopic]);
+
     return (
         <div>
             <p className="mb-2 text-sm leading-6 font-semibold text-sky-500">Searching</p>
             <h1 className="text-3xl sm:text-3xl font-medium text-slate-800 pb-8">Searching Algorithms In Go</h1>
             <p className="text-[#334155]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc aliquet bibendum.</p>
-            
+            <div ref={linearRef}></div>
+
             <hr className="my-14"></hr>
 
             <h2 className="text-2xl font-medium pb-8 text-slate-800">Linear Search</h2>
@@ -50,6 +68,7 @@ const Searching = () => {
                     <span className="curlyBracket">&#125;</span><br />
                 </p>
             </div>
+            <div ref={jumpRef}></div>
 
             <hr className="my-14"></hr>
 
@@ -125,6 +144,7 @@ const Searching = () => {
                     <span className="curlyBracket">&#125;</span><br />
                 </p>
             </div>
+            <div ref={binaryRef}></div>
 
             <hr className="my-14"></hr>
             
