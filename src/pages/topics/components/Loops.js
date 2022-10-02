@@ -29,13 +29,11 @@ const Loops = ({ subTopic }) => {
 
             <h2 className="text-2xl font-medium pb-8 text-slate-800">For Loop</h2>
             <div className="code">
-                <p>
-                    <span className="conditional">for</span> <span className="variable">i</span> := 0; <span className="variable">i</span> &#60; 10&#x3b; <span className="variable">i</span>++ <span className="curlyBracket">&#123;</span><br />
-                    <div className="indent">
-                        <span className="comment">// Code here</span>
-                    </div>
-                    <span className="curlyBracket">&#125;</span>
-                </p>
+                <span className="conditional">for</span> <span className="variable">i</span> := 0; <span className="variable">i</span> &#60; 10&#x3b; <span className="variable">i</span>++ <span className="curlyBracket">&#123;</span><br />
+                <div className="indent">
+                    <span className="comment">// Code here</span>
+                </div>
+                <span className="curlyBracket">&#125;</span>
                 <div ref={forEachRef}></div>
             </div>
 
@@ -43,40 +41,34 @@ const Loops = ({ subTopic }) => {
 
             <h2 className="text-2xl font-medium pb-8 text-slate-800">For Each Loop</h2>
             <div className="code">
-                <p>
-                    <span className="comment">// Runes (chars)</span><br />
-                    <span className="conditional">for</span> <span className="variable">index</span>, <span className="variable">char</span> := <span className="conditional">range</span> <span className="string">"hello"</span> &#123;<br />
-                    <div className="indent">
-                        <span className="comment">// Code here</span>
-                    </div>
-                    <span className="curlyBracket">&#125;</span>
-                </p>
+                <span className="comment">// Runes (chars)</span><br />
+                <span className="conditional">for</span> <span className="variable">index</span>, <span className="variable">char</span> := <span className="conditional">range</span> <span className="string">"hello"</span> &#123;<br />
+                <div className="indent">
+                    <span className="comment">// Code here</span>
+                </div>
+                <span className="curlyBracket">&#125;</span>
             </div>
             <br />
             <div className="code">
-                <p>
-                    <span className="comment">// Slices</span><br />
-                    <span className="variable">words</span> := <span className="squareBracket">[]</span><span className="type">string</span><span className="curlyBracket">&#123;</span><span className="string">"apples"</span>, <span className="string">"oranges"</span>, <span className="string">"bananas"</span><span className="curlyBracket">&#125;</span><br />
-                    <br />
-                    <span className="conditional">for</span> <span className="variable">index</span>, <span className="variable">value</span> := <span className="conditional">range</span> <span className="variable">words</span> &#123;<br />
-                    <div className="indent">
-                        <span className="comment">// Code here</span>
-                    </div>
-                    <span className="curlyBracket">&#125;</span>
-                </p>
+                <span className="comment">// Slices</span><br />
+                <span className="variable">words</span> := <span className="squareBracket">[]</span><span className="type">string</span><span className="curlyBracket">&#123;</span><span className="string">"apples"</span>, <span className="string">"oranges"</span>, <span className="string">"bananas"</span><span className="curlyBracket">&#125;</span><br />
+                <br />
+                <span className="conditional">for</span> <span className="variable">index</span>, <span className="variable">value</span> := <span className="conditional">range</span> <span className="variable">words</span> &#123;<br />
+                <div className="indent">
+                    <span className="comment">// Code here</span>
+                </div>
+                <span className="curlyBracket">&#125;</span>
             </div>
             <br />
             <div className="code">
-                <p>
-                    <span className="comment">// Maps</span><br />
-                    <span className="variable">stock</span> := <span className="keyword">map</span><span className="squareBracket">[<span className="type">string</span>]</span><span className="type">int</span> <span className="curlyBracket">&#123;</span><span className="string">"apples"</span>: 5, <span className="string">"oranges"</span>: 2, <span className="string">"bananas"</span>: 3<span className="curlyBracket">&#125;</span><br />
-                    <br />
-                    <span className="conditional">for</span> <span className="variable">key</span>, <span className="variable">value</span> := <span className="conditional">range</span> <span className="variable">stock</span> &#123;<br />
-                    <div className="indent">
-                        <span className="comment">// Code here</span>
-                    </div>
-                    <span className="curlyBracket">&#125;</span>
-                </p>
+                <span className="comment">// Maps</span><br />
+                <span className="variable">stock</span> := <span className="keyword">map</span><span className="squareBracket">[<span className="type">string</span>]</span><span className="type">int</span> <span className="curlyBracket">&#123;</span><span className="string">"apples"</span>: 5, <span className="string">"oranges"</span>: 2, <span className="string">"bananas"</span>: 3<span className="curlyBracket">&#125;</span><br />
+                <br />
+                <span className="conditional">for</span> <span className="variable">key</span>, <span className="variable">value</span> := <span className="conditional">range</span> <span className="variable">stock</span> &#123;<br />
+                <div className="indent">
+                    <span className="comment">// Code here</span>
+                </div>
+                <span className="curlyBracket">&#125;</span>
                 <div ref={whileRef}></div>
             </div>
             <div />
@@ -85,16 +77,14 @@ const Loops = ({ subTopic }) => {
 
             <h2 className="text-2xl font-medium pb-8 text-slate-800">While Loop</h2>
             <div className="code">
-                <p>
-                    <span className="variable">n</span> := 0<br />
-                    <br />
-                    <span className="conditional">for</span> <span className="variable">n</span> &#60; 10 <span className="curlyBracket">&#123;</span><br />
-                    <div className="indent">
-                        <span className="comment">// Code here</span><br />
-                        <span className="variable">n</span>++<br />
-                    </div>
-                    <span className="curlyBracket">&#125;</span>
-                </p>
+                <span className="variable">n</span> := 0<br />
+                <br />
+                <span className="conditional">for</span> <span className="variable">n</span> &#60; 10 <span className="curlyBracket">&#123;</span><br />
+                <div className="indent">
+                    <span className="comment">// Code here</span><br />
+                    <span className="variable">n</span>++<br />
+                </div>
+                <span className="curlyBracket">&#125;</span>
                 <div ref={infiniteRef}></div>
             </div>
 
@@ -102,14 +92,12 @@ const Loops = ({ subTopic }) => {
 
             <h2 className="text-2xl font-medium pb-8 text-slate-800">Infinite Loop</h2>
             <div className="code">
-                <p>
-                    <span className="conditional">for</span> <span className="curlyBracket">&#123;</span><br />
-                    <div className="indent">
-                        <span className="comment">// When condition is satisfied</span><br />
-                        <span className="conditional">break</span><br />
-                    </div>
-                    <span className="curlyBracket">&#125;</span>
-                </p>
+                <span className="conditional">for</span> <span className="curlyBracket">&#123;</span><br />
+                <div className="indent">
+                    <span className="comment">// When condition is satisfied</span><br />
+                    <span className="conditional">break</span><br />
+                </div>
+                <span className="curlyBracket">&#125;</span>
             </div>
         </div>
     );
