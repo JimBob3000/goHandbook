@@ -6,15 +6,14 @@ import Loops from "./components/Loops";
 import Structs from "./components/Structs";
 import Searching from "./components/Searching";
 import Sorting from "./components/Sorting";
-import { useState } from 'react';
 import { useCallback } from 'react';
 
-const Topics = () => {
-    const topic = window.location.pathname.substring(1).toLowerCase()
-    const subTopic = new URLSearchParams(window.location.search).get("section")
+const Topics = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSubTopic }) => {
+    // const topic = window.location.pathname.substring(1).toLowerCase()
+    // const subTopic = new URLSearchParams(window.location.search).get("section")
     
-    const [currentTopic, setCurrentTopic] = useState(topic)
-    const [currentSubTopic, setCurrentSubTopic] = useState(subTopic)
+    // const [currentTopic, setCurrentTopic] = useState(topic)
+    // const [currentSubTopic, setCurrentSubTopic] = useState(subTopic)
 
     const ActiveTopic = useCallback(() => {
         switch (currentTopic) {

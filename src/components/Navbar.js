@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/fontawesome-free-solid'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
-const Navbar = () => {
+const Navbar = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSubTopic }) => {
     const [open, setOpen] = useState(false);
 
     const handleChange = () => {
@@ -25,7 +25,14 @@ const Navbar = () => {
             <div className="lg:hidden">
             </div>
 
-            <Menu open={open} onClick={handleChange}  />
+            <Menu 
+                open={open} 
+                onClick={handleChange} 
+                currentTopic={currentTopic} 
+                setCurrentTopic={setCurrentTopic}
+                currentSubTopic={currentSubTopic} 
+                setCurrentSubTopic={setCurrentSubTopic} 
+            />
         </nav>
     );
 }
