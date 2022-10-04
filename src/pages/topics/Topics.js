@@ -34,7 +34,6 @@ const Topics = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSubT
         }
     }, [currentTopic, currentSubTopic]);
 
-    // TODO: fix code sections being a div within a p
     return (
         <div className="xl:px-auto relative mx-auto flex justify-center lg:justify-start xl:justify-center sm:px-2 lg:px-8">
             <SideMenu 
