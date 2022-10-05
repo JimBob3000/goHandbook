@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
+// TODO: fix home button
 const NotFound = () => {
     const navigate = useNavigate();
     const handleClickBackToHome = () => {

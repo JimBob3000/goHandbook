@@ -9,12 +9,6 @@ import Sorting from "./components/Sorting";
 import { useCallback } from 'react';
 
 const Topics = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSubTopic }) => {
-    // const topic = window.location.pathname.substring(1).toLowerCase()
-    // const subTopic = new URLSearchParams(window.location.search).get("section")
-    
-    // const [currentTopic, setCurrentTopic] = useState(topic)
-    // const [currentSubTopic, setCurrentSubTopic] = useState(subTopic)
-
     const ActiveTopic = useCallback(() => {
         switch (currentTopic) {
             case "":

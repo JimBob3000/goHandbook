@@ -4,6 +4,7 @@ import Topics from './pages/topics/Topics';
 import About from './pages/about/About';
 import { useState } from 'react';
 
+// TODO: remove unused home folder
 function App() {
   const topic = window.location.pathname.substring(1).toLowerCase()
   const subTopic = new URLSearchParams(window.location.search).get("section")

@@ -6,6 +6,7 @@ const About = () => {
         navigate('/');
     }
 
+    // TODO: fix home button
     return ( 
         <section id="about" className="flex-grow">
             <div className="text-center mx-auto pt-10">
