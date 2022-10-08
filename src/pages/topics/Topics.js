@@ -6,6 +6,7 @@ import Loops from "./components/Loops";
 import Structs from "./components/Structs";
 import Searching from "./components/Searching";
 import Sorting from "./components/Sorting";
+import Concurrency from './components/Concurrency';
 import { useCallback } from 'react';
 
 const Topics = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSubTopic }) => {
@@ -19,6 +20,8 @@ const Topics = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSubT
                 return ( <Loops subTopic={currentSubTopic} /> );
             case "structs":
                 return ( <Structs subTopic={currentSubTopic} /> );
+            case "concurrency":
+                return ( <Concurrency subTopic={currentSubTopic} /> );
             case "searching":
                 return ( <Searching subTopic={currentSubTopic} /> );
             case "sorting":

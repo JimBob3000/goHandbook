@@ -33,6 +33,14 @@ const Chapters = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSu
                 </ul>
             </li>
             <li>
+                <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Concurrency</h5>
+                <ul className="mt-4  border-l-2 border-slate-100">
+                    <li className="leading-9"><a className={currentSubTopic === "goroutine" ? "active" : "inactive"} onClick={() => handleNavigation("concurrency", "goroutine")}>Goroutine</a></li>
+                    <li className="leading-9"><a className={currentSubTopic === "anonymousGoroutine" ? "active" : "inactive"} onClick={() => handleNavigation("concurrency", "anonymousGoroutine")}>Anonymous Goroutine</a></li>
+                    <li className="leading-9"><a className={currentSubTopic === "waitGroup" ? "active" : "inactive"} onClick={() => handleNavigation("concurrency", "waitGroup")}>WaitGroups</a></li>
+                </ul>
+            </li>
+            <li>
                 <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Sorting</h5>
                 <ul className="mt-4  border-l-2 border-slate-100">
                     <li className="leading-9"><a className={currentSubTopic === "bubble" ? "active" : "inactive"} onClick={() => handleNavigation("sorting", "bubble")}>Bubble Sort</a></li>
