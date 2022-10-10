@@ -1,12 +1,4 @@
-import { useNavigate } from 'react-router-dom';
-
 const About = () => {
-    const navigate = useNavigate();
-    const handleClickBackToHome = () => {
-        navigate('/');
-    }
-
-    // TODO: fix home button
     return ( 
         <section id="about" className="flex-grow">
             <div className="text-center mx-auto pt-10">
@@ -21,9 +13,11 @@ const About = () => {
                 <p className="pb-4"><b>GitHub</b> holds the goMiniProjects repositroy along with this sites repository.</p>
                 <p className="pb-4">Finally, everything is presented on <b>dedicated hosting</b> secured with <b>SSL</b>.</p>
                 
-                <p className="pt-12">Thanks for visiting!</p>
+                <p className="py-12">Thanks for visiting!</p>
                 
-                <button onClick={handleClickBackToHome} className="rounded-lg text-white bg-[#0ea5e9] hover:bg-[#1baff3] transition duration-500 mx-auto px-16 py-2 my-8 font-medium">Home</button>    
+                <p className="pb-12">
+                    <a href="/home" className="rounded-lg text-white bg-[#0ea5e9] hover:bg-[#1baff3] transition duration-500 mx-auto px-12 py-2 my-8 font-medium">Home</a>
+                </p>
             </div>
         </section>
      );
