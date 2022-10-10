@@ -58,8 +58,8 @@ const Chapters = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSu
             </li>
             <hr />
             <li>
+                <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Other Pages</h5>   
                 <ul className="mt-4  border-l-2 border-slate-100">
-                    <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Other Pages</h5>
                     <li className="leading-9"><a className={currentTopic === "home" ? "active" : "inactive"} onClick={() => handleNavigation("home", "")}>Home</a></li>
                     <li className="leading-9"><a className="inactive" onClick={() => handleNavigation("about", "")}>About</a></li>
                 </ul>
