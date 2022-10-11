@@ -56,6 +56,12 @@ const Chapters = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSu
                     <li className="leading-9"><a className={currentSubTopic === "binary" ? "active" : "inactive"} onClick={() => handleNavigation("searching", "binary")}>Binary Search</a></li>
                 </ul>
             </li>
+            <li>
+                <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Misc</h5>
+                <ul className="mt-4  border-l-2 border-slate-100">
+                    <li className="leading-9"><a className={currentSubTopic === "recursion" ? "active" : "inactive"} onClick={() => handleNavigation("misc", "recursion")}>Recursion</a></li>
+                </ul>
+            </li>
             <hr />
             <li>
                 <h5 className="lg:mb-3 font-semibold text-slate-800 dark:text-slate-200">Other Pages</h5>   

@@ -7,6 +7,7 @@ import Structs from "./components/Structs";
 import Searching from "./components/Searching";
 import Sorting from "./components/Sorting";
 import Concurrency from './components/Concurrency';
+import Misc from './components/Misc';
 import { useCallback } from 'react';
 
 const Topics = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSubTopic }) => {
@@ -26,6 +27,8 @@ const Topics = ({ currentTopic, setCurrentTopic, currentSubTopic, setCurrentSubT
                 return ( <Searching subTopic={currentSubTopic} /> );
             case "sorting":
                 return ( <Sorting subTopic={currentSubTopic} /> );
+            case "misc":
+                return ( <Misc subTopic={currentSubTopic} /> );
             default:
                 return ( <NotFound /> );
         }
